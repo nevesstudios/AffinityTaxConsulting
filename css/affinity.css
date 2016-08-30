@@ -1,0 +1,221 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  /*color: #5a5a5a;*/
+  color: #403027;
+  background: linear-gradient(rgba(177,199,206,.5), rgba(177,199,206,1));
+}
+
+hr {
+  border-color: #403027;
+  background-color: #403027;
+  color: #403027;
+}
+
+.header-logo-dark {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: darkgrey;
+  background-image: url("../images/background.jpg");
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: darkblue;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar {
+  margin: 0;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: blue;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+/* CUSTOMIZE THE FOOTER
+-------------------------------------------------- */
+/* Flip around the padding for proper display in narrow viewports */
+footer > .container {
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+footer > .container > .row {
+  margin: 0px;
+  padding-top: 5px;
+  border: none;
+  color: white;
+  background-color: darkblue;
+}
+
+.members a,
+.members a:hover,
+.members a:focus,
+.members a:active,
+.members a:visited {
+  color: #fff;
+  background-color: transparent;
+}
+.members img {
+  height: 60px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 15px;
+  /*margin-top: 71px;*/
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+}
+.carousel-inner > .item > img {
+/*  position: absolute;
+  top: 0;
+  left: 0;*/
+  min-width: 100%;
+  height: 500px;
+}
+.carousel-caption{
+    background: rgba(0,0,0,0.5);
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.marketing .row {
+  background-color: lightblue;
+  border-style: solid;
+  border-width: 2px;
+}
+
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* About
+-------------------------------------------------- */
+#about .row {
+  margin-bottom: 15px;
+}
+#about img {
+  height: 80%;
+  width: 80%;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contact Us
+-------------------------------------------------- */
+.contact-msg {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.contact-msg-box {
+  margin-top: 5px;
+  width: 100%;
+  height: 200px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .carousel .item {
+    background-color: lightblue;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .carousel-caption .row a {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

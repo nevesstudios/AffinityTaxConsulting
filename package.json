@@ -1,0 +1,30 @@
+{
+  "name": "affinitytaxconsulting",
+  "version": "1.0.0",
+  "description": "Affinity Tax & Consulting website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevesstudios/AffinityTaxConsulting.git"
+  },
+  "keywords": [
+    "affinity",
+    "tax",
+    "consulting",
+    "accountant",
+    "taxes",
+    "consultant",
+    "software",
+    "training",
+    "books"
+  ],
+  "author": "nevesstudios",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nevesstudios/AffinityTaxConsulting/issues"
+  },
+  "homepage": "https://github.com/nevesstudios/AffinityTaxConsulting#readme"
+}
