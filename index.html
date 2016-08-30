@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>ATC CPAs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/affinity.css" rel="stylesheet">
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var var_location = new google.maps.LatLng(36.152910, -115.275383);
+
+  			var mapProp = {
+    			center:var_location,
+    			zoom:13,
+    			mapTypeId:google.maps.MapTypeId.ROADMAP
+ 			};
+  			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+			var var_marker = new google.maps.Marker({
+				position: var_location,
+				map: map,
+				title:"Affinity Tax & Consulting"});
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+  </head>
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <div class="container">
+      	<div class="header-logo-dark">
+      	   <a href="#"><img src="images/Affinity-Tax&Consulting Logo Dark-72-dpi.png"/></a>
+      	</div>
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#about" data-toggle="tab">About ATC</a></li>
+                <li><a href="#prep" data-toggle="tab">Tax Preparation and IRS Representation</a></li>
+                <li><a href="#accounting" data-toggle="tab">Accounting and Business Services</a></li>
+                <li><a href="#contact" data-toggle="tab">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/vcr-office.jpg" alt="ATC Office">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Affinity Tax & Consulting CPAs and Staff</h1>
+              <p>Affinity Tax & Consulting’s professional team have experience in all aspects of accounting, bookkeeping, training, tax services, and IRS representation.</p>
+              <p><a class="btn btn-lg btn-primary" href="#schedule" role="button">Schedule an appointment today!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/our-team.jpg" alt="Our Team">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Our Team</h1>
+              <p>Affinity Tax & Consulting was formed in 2015 by Cory Roberts and Michelle Tyson; both of which are experienced CPAs.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Popular Links</h1>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a class="btn btn-lg btn-primary" href="#" role="button">IRS Audit Representation</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a class="btn btn-lg btn-primary" href="#" role="button">Income Tax Planning</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a class="btn btn-lg btn-primary" href="#" role="button">Tax Preparation</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a class="btn btn-lg btn-primary" href="#" role="button">Accounting and Business Services</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a class="btn btn-lg btn-primary" href="#" role="button">QuickBooks Training</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.myCarousel -->
+    </div><!-- /#container -->
+    </div><!-- /.home -->
+
+    <div id="about" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h3>About Affinity Tax & Consulting LLC</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3">
+            <img src="images/cory-roberts.jpg"/>
+          </div>
+          <div class="col-xs-9">
+            <h3>Cory Roberts, CPA</h3>
+            <p>
+              Cory Roberts, CPA gained his accounting experience as a Tax Manager with Deloitte & Touche (now Deloitte) where he spent over eight years in both the Boston, MA and Las Vegas, NV offices working with multi-national corporations, high net-worth individuals, and the various business and investment vehicles utilized by such clients. For the next nine years Mr. Roberts has had his own accounting practice where he continues to consult with domestic and international investors specializing in Income Tax Planning and Consulting. In 2012 Mr. Roberts also took on the responsibilities of Chief Financial Officer and Chief Operations Officer of the Yamagata Enterprises Family Office, which has been a client of his accounting practice since 2003. He has since opened a new business with Michelle Tyson and works as the Senior Partner at Affinity Tax & Consulting. 
+            </p>
+            <p>
+              Mr. Roberts earned his Masters of Accountancy and Bachelor’s of Science degrees from Brigham Young University and is fluent in Portuguese.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3">
+            <img src="images/michelle-tyson.jpg"/>
+          </div>
+          <div class="col-xs-9">
+            <h3>Michelle Tyson, EA, CPA</h3>
+            <p>
+              Michelle Tyson, EA, CPA worked in public accounting since 2004. She received a Bachelor’s in Accounting in 2007, became an Enrolled Agent in May of 2012, and received her MBA in 2013. Mrs. Tyson received her CPA licensure in 2015. Mrs. Tyson has worked with Mr. Roberts as the Tax Manager at Vranes, Coffman, Roberts CPAs for 4 years. She is now partnered with Mr. Roberts at Affinity Tax & Consulting. Affinity Tax & Consulting has been in operation since May 2015. 
+            </p>
+            <p>
+              Prior to working in the accounting field she was in restaurant management. Mrs. Tyson has lived in Las Vegas for 5 years, and prior lived in Toledo, Ohio for 13 years where she also worked in public accounting.
+            </p>
+          </div><!-- /#col -->
+        </div><!-- /#row -->
+      </div><!-- /#container -->
+    </div><!-- /.about -->
+
+    <div id="prep" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h3>Tax Preparation & IRS Representation</h3>
+          </div>
+        </div>
+        <div class="row"><center>
+			At Affinity Tax & Consulting we guide you through a full range of tax planning and preparation strategies to help defend your income by going beyond the numbers to discover your true business story. Regardless of your entity type, our team can help you navigate the complex and shifting network of tax laws to maximize every financial opportunity.<br/><br/>
+			As tax planning and preparation specialists, we know how to maximize your tax-saving opportunities while staying within the guidelines provided by the Internal Revenue Code. We provide our clients with a Big Four perspective with small firm personalized service. We're here to help you get there!<br/><br/>
+			At Affinity Tax & Consulting we understand how each aspect of your tax plan affects your financial story. With our expertise we are able to help you develop a detailed tax strategy that identifies and capitalizes possible opportunities in order to save on local, state and federal taxes.<br/><br/>
+			Keeping up to date on tax issues is only the beginning. Our team at Affinity Tax & Consulting have a wide range of experience and knowledge in multiple industries including real estate, food and beverage, retail, medical and legal professions. However, in order to help you in the best way possible we must know you and your financial story. Therefore, we take the time to meet and talk with you in order to better understand you, your business, your current situation, your goals and your plans for the future. We are equipped to assist you with a company purchase, sale, merger or dissolution and your individual tax needs.
+        </center></div><br/>
+        <div class="row">
+          <div class="col-xs-6">
+            <p><strong>
+              Our tax planning and tax preparation services include, but are not limited to:
+            </strong></p>
+            <ul>
+              <li>Preparing tax returns for businesses and individuals</li>
+              <li>Estate and trust planning</li>
+              <li>Strategic planning assistance</li>
+              <li>Alternative minimum tax planning</li>
+              <li>IRS problem resolution</li>
+              <li>Audit assistance</li>
+              <li>SALT (state and local taxes)</li>
+              <li>Expert tax witness</li>
+              <li>International taxes</li>
+              <li>E-filing tax returns</li>
+              <li>Business consulting</li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <p><strong>
+              Non-Profit Tax Services:
+            </strong></p>
+            <p>
+              The partners at Affinity Tax & Consulting have worked with many non-profit organizations over the years, including private and publicly supported foundations.  We know that protecting your tax exempt status is very important to you.  The IRS uses very specific revenue and expense classifications to determine if your oganization will retain its tax-exempt status.  Therefore, it is imperative that you build your accounting system around these revenue and expense classifications.
+            </p>
+            <p>
+              With our experience and knowledge, we can help protect your organization's tax-exempt status and prepare your annual Form 990 and/or 990-T to be filed with the IRS.  We will also assist you in determining if your organization may be subject to unrelated business taxes, and if so, we can help to minimize your exposure to this tax.
+            </p>
+          </div>
+        </div>
+      </div><!-- /#container -->
+    </div><!-- /.prep -->
+
+    <div id="accounting" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 text-center">
+            <h3>Business Services</h3>
+          </div>
+          <div class="col-xs-4 text-center">
+            <h3>Accounting & Bookkeeping</h3>
+          </div>
+          <div class="col-xs-4 text-center">
+            <h3>Quickbooks Training</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <p><strong>
+              Incorporation & New Business Advisory Services:
+            </strong></p>
+            <p>
+              We are able to consult with new and developing businesses on entity formation and incorporation procedures.
+            </p>
+            <p><strong>
+              Deciding between a Corporation, LImited Liability Company ('LLC') or Partnership:
+            </strong></p>
+            <p>
+              We have extensive experience to help discuss the tax and accounting pros and cons of various entity structures.  We can consult with businesses on the accounting and tax ramifications of forming in various states, as well as assist in selecting the appropriate state formation based on the businesses' specific circumstances.
+            </p>
+            <p><strong>
+              Minimizing taxes, using your Company and/or LLC:
+            </strong></p>
+            <p>
+              Our ongoing accounting and tax services will assure that businesses harness and manage the tax benefits of their entity.
+            </p>
+            <p><strong>
+              Opening Bank Accounts:
+            </strong></p>
+            <p>
+              Our relationships with multiple banking institutions affords our clients the ability to efficiently open bank accounts, even under strict banking guidelines.
+            </p>
+          </div>
+          <div class="col-xs-4">
+            <p>
+              As a buisness owner, by running your business and managing daily operations, you have enough to keep you busy.  Partially, or fully, outsourcing your accounting functions to us, allows you to focus on your business operations and generating profits.  We believe every client has unique accounting needs.  As a result, our firm tailors accounting and bookkeeping servicies specific to your needs.
+            </p>
+            <p>
+              What sets us apart from our competitors is the time we invest learning about your business.  This time investment allows us to customize your accounting process and develop tools that will assist you in fine tuning your operations and maximizing your cash flow.
+            </p>
+            <p>
+              <strong>Our Services include, but are not limited to:</strong>
+            </p>
+            <ul>
+              <li>Initial setup of the accounting records and financial reporting system</li>
+              <li>Create, maintain, and as necessary, update budgets</li>
+              <li>Prepare invoices and post deposits</li>
+              <li>Prepare unpaid bills, reports and process checks for third party bills</li>
+              <li>Prepare various Nevada Department of Taxation reports</li>
+              <li>Reconcile bank accounts</li>
+              <li>Review cash and credit card accounts and reconcile to various POS, merchant and independent system reports</li>
+              <li>Meet with you periodically to discuss business operations and strategies</li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <p>
+              Let our QuickBooks Training Class relieve your stress.  Our customized training will help you navigate and understand your company's accounting system through one-on-one training with Michelle, our friendly and patient QuickBooks Specialist.
+            </p>
+            <p>
+              <strong>Our QuickBooks consulting services include, but are not limited to:</strong>
+            </p>
+            <ul>
+              <li>Consultations on QuickBooks editions</li>
+              <li>Setting up your company file and choosing your preferences</li>
+              <li>Customizing your chart of accounts</li>
+              <li>Setting up lists, payroll, sales tax and fixed assets</li>
+              <li>Setting up security and backup procedures</li>
+              <li>Training on shortcuts and easily managing your books</li>
+              <li>Creating professional invoices and tracking customer balances</li>
+              <li>Entering bills and processing checks</li>
+              <li>Reconciling bank accounts</li>
+              <li>Entering historical transactions</li>
+              <li>Creating reports needed for your business</li>
+              <li>On-going QuickBooks advice as needed</li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /#container -->
+    </div><!-- /.accounting -->
+
+    <div id="contact" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 text-center">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="col-xs-6 text-center">
+            <h3>Contact Affinity Tax & Consulting:</h3>
+          </div>
+        </div><!-- /#row -->
+        <div class="row">
+          <div class="col-xs-6">
+            <div><p>
+              	<strong>Telephone:</strong> (702) 982-7950<br/>
+              	<strong>Fax:</strong> (702) 982-3800
+              </p></div>
+              <div><p>
+              	<strong>Address:</strong><br/>
+              	8330 W Sahara Ave., Ste 190<br/>
+              	Las Vegas, NV 89117<br/>
+              	<a href="https://www.google.com/maps/dir//Vranes+Coffman+Roberts+Cpas,+8330+W+Sahara+Ave+%23+190,+Las+Vegas,+NV+89117/@36.0765,-115.2865411,12z/data=!4m16!1m7!3m6!1s0x80c8c09994c8f6db:0x6930b4fb1fcec0ca!2sVranes+Coffman+Roberts+Cpas!3b1!8m2!3d36.1441253!4d-115.2733502!4m7!1m0!1m5!1m1!1s0x80c8c09994c8f6db:0x6930b4fb1fcec0ca!2m2!1d-115.2733502!2d36.1441253">Get Directions</a>
+              	<div id="googleMap" style="width:500px;height:380px;"></div>
+              <p></div>
+          </div><!-- /#col -->
+          <div class="col-xs-6">
+            <form method="POST" action="mailto:styson@affinity.tax" enctype="text/plain">
+            	<div>
+            		<input class="contact-msg" type="text" name="name" placeholder="Your First and Last Name"></input><br/>
+            		<input class="contact-msg" type="text" name="referrer" placeholder="Referred By"></input><br/>
+            		<textarea class="contact-msg-box" name="message" placeholder="Message"></textarea><br/>
+            		<center><input type="submit" value="Email"></input></center>
+            	</div>
+            </form>
+          </div><!-- /#col -->
+        </div><!-- /#row -->
+      </div><!-- /#container -->
+    </div><!-- /.contact -->
+    </div><!-- /#tab-content -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="contact">
+              <p><strong>Affinity Tax & Consulting</strong></p>
+              <div><p>
+              	<strong>Telephone:</strong> (702) 982-7950<br/>
+              	<strong>Fax:</strong> (702) 982-3800
+              </p></div>
+              <div><p>
+              	<strong>Address:</strong><br/>
+              	8330 W Sahara Ave., Ste 190<br/>
+              	Las Vegas, NV 89117<br/>
+              	<a href="https://www.google.com/maps/dir//Vranes+Coffman+Roberts+Cpas,+8330+W+Sahara+Ave+%23+190,+Las+Vegas,+NV+89117/@36.0765,-115.2865411,12z/data=!4m16!1m7!3m6!1s0x80c8c09994c8f6db:0x6930b4fb1fcec0ca!2sVranes+Coffman+Roberts+Cpas!3b1!8m2!3d36.1441253!4d-115.2733502!4m7!1m0!1m5!1m1!1s0x80c8c09994c8f6db:0x6930b4fb1fcec0ca!2m2!1d-115.2733502!2d36.1441253">Get Directions</a>
+              <p></div>
+              <div><p>
+              	Hours of Operation:<br/>
+              	Monday - Friday: 9 AM - 5 PM
+              </p></div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="members">
+              <h3>Members</h3>
+              <ul class="list-inline">
+                <li><a href="#" target="_blank"><img src="images/aicpa-logo.png"/></a></li>
+                <li><a href="#" target="_blank"><img src="images/cpa-logo.jpg"/></a></li>
+                <li><a href="#" target="_blank"><img src="images/nvcpa-logo.gif"/></a></li>
+              </ul>
+            </div><!-- /#members -->
+          </div><!-- /#col -->
+        </div><!-- /#row -->
+      </div><!-- /#container -->
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.js"><\/script>')</script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/affinity.js"></script>
+  </body>
+</html>
