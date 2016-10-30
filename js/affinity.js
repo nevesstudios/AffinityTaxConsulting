@@ -1,15 +1,17 @@
 $(function() {
+	var location={lat: 36.152910, lng: -115.275383};
+
 	var mapOptions = {
-		center: new google.maps.LatLng(36.152910, -115.275383),
-		zoom: 13,
+		center: new google.maps.LatLng(location),
+		zoom: 4,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 
 	var map;
 
 	var var_marker = new google.maps.Marker({
-		position: var_location,
-		map: var_map,
+		position: location,
+		map: map,
 		title:"Affinity Tax & Consulting"});
 
 	$('#contact').on('shown.bs.tab', function(e) {
