@@ -1,22 +1,19 @@
-$(function() {
-	var location={lat: 36.152910, lng: -115.275383};
+var var_location = new google.maps.LatLng(36.152910, -115.275383);
 
-	var mapOptions = {
-		center: new google.maps.LatLng(location),
-		zoom: 4,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
+var mapOptions = {
+	center:var_location,
+	zoom:13,
+	mapTypeId:google.maps.MapTypeId.ROADMAP
+};
 
-	var map;
+$( document ).ready(function() {
+//	$('#contact').on('shown.bs.tab', function(e) {
+	$('a[href="#contact"]').on('shown.bs.tab', function(e) {
+		var map = new google.maps.Map(document.getElementById("googleMap"), window.mapOptions);
 
-	var var_marker = new google.maps.Marker({
-		position: location,
-		map: map,
-		title:"Affinity Tax & Consulting"});
-
-	$('#contact').on('shown.bs.tab', function(e) {
-		if( map == undefined) {
-			map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-		}
+		var var_marker = new google.maps.Marker({
+			position: window.var_location,
+			map: map,
+			title:"Affinity Tax & Consulting"});
 	});
-})
+});
