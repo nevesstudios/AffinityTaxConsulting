@@ -16,4 +16,12 @@ $( document ).ready(function() {
 			map: map,
 			title:"Affinity Tax & Consulting"});
 	});
+
+	$('#gotocontact').click(function() {
+	  $('#contentTab a[href="#contact"]').tab('show');
+	});
+
+	$('#gotoabout').click(function() {
+	  $('#contentTab a[href="#about"]').tab('show');
+	});
 });
