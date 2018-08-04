@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/nevesstudios/AffinityTaxConsulting/issues"
   },
-  "homepage": "https://github.com/nevesstudios/AffinityTaxConsulting#readme"
+  "homepage": "https://github.com/nevesstudios/AffinityTaxConsulting#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
 }
